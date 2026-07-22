@@ -96,8 +96,7 @@ export default function Submission() {
                   'Camera-ready papers must strictly follow the IEEE Template. Non-compliant papers may not appear in IEEE Xplore.',
                   'Plagiarism must be below 30% (using standard plagiarism checking software).',
                   'Maximum 6 pages. Up to 2 additional over-length pages allowed with extra charges. Absolute maximum: 8 pages.',
-                  <>Use the copyright clearance code: <code className="bg-blue-50 border border-blue-200 text-blue-700 px-2 py-0.5 rounded text-xs font-mono font-bold">979-8-3315-9055-0/26/$31.00 ©2026 IEEE</code></>,
-                  <>Check PDF compliance at <a href="https://www.pdf-express.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">pdf-express.org</a> — Conference Code: <strong className="text-gray-900">68221X</strong></>,
+                  <>Check PDF compliance at <a href="https://www.pdf-express.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">pdf-express.org</a> — Conference Code: <strong className="text-gray-900">72973#</strong></>,
                   'At least one author must register and present the paper (hybrid mode) for IEEE Xplore inclusion.',
                   'Submit camera-ready by 15th January 2027. Upload IEEE Copyright Form via CMT portal.',
                 ].map((item, i) => (
