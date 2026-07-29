@@ -10,7 +10,7 @@ import tracks from '../data/tracksData';
 
 const importantDates = [
   { event: 'Paper Submission Opens',       date: '1 May 2026',      done: false },
-  { event: 'Full Paper Submission Deadline', date: '1 Oct 2026',    done: false },
+  { event: 'Full Paper Submission Deadline', date: '31 Oct 2026',    done: false },
   { event: 'Acceptance Notification',       date: '15 Nov 2026',    done: false },
   { event: 'Camera Ready Paper Due',        date: '15 Dec 2026',    done: false },
   { event: 'Registration Deadline',         date: '15 Jan 2027',    done: false },

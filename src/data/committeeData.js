@@ -5,16 +5,28 @@ export const chiefPatron = [
 export const patrons = [
   { name: "Prof. Dr. Guru Prasad Subas Chandra Mishra", role: "Dean (R&C), NIT Raipur" },
   { name: "Dr. Geetam Tomar", role: "Director, Govt Engg. College, Sonbhadra, UP" },
-  { name: "Shri. M K Badapanda", role: "RRCAT, Indore, Madhya Pradesh" }
+  { name: "Shri. M K Badapanda", role: "RRCAT, Indore, Madhya Pradesh" },
+
+  // Added
+  { name: "Prof. Narendra D. Londhe", role: "NIT Raipur" },
+  { name: "Prof. S. Gupta", role: "NIT Raipur" }
 ];
 
 export const honoraryChairs = [
   { name: "Prof. Kashem Muttaqi", role: "University of Wollongong, Australia" },
   { name: "Prof. Vivek Agarwal", role: "IIT Bombay" },
   { name: "Prof. Sanjib Panda", role: "NUS Singapore" },
+  { name: "Prof. Sukumar Mishra", role: "IIT(ISM) Dhanbad" },
+  { name: "Prof. Bidyadhar Subudhi", role: "NIT Warangal" },
   { name: "Prof. Nikos Hatziargyriou", role: "NTUA, Greece" },
   { name: "Prof. N. P. Padhy", role: "MNIT Jaipur" },
-  { name: "Prof. Ashok Kumar Pradhan", role: "IIT Kharagpur" }
+  { name: "Prof. Ashok Kumar Pradhan", role: "IIT Kharagpur" },
+  { name: "Prof. Bijay Ketan Panigrahy", role: "IIT Delhi" }
+];
+
+// Added
+export const industrialChair = [
+  { name: "Er. Hemant Verma", role: "Tripura Electricity Regulatory Commission" }
 ];
 
 export const generalChairs = [
@@ -22,10 +34,10 @@ export const generalChairs = [
 ];
 
 export const organizingSecretaries = [
-  { name: "Dr. R. N. Patel", role: "NIT Raipur", phone: "8770016399", email: "rnpatel.ee@nitrr.ac.in" },
-  { name: "Dr. Monalisa Biswal", role: "NIT Raipur", phone: "9437058624", email: "mbiswal.ele@nitrr.ac.in" },
-  { name: "Dr. Surajit Sannigrahi", role: "NIT Raipur", phone: "9547931188", email: "ssannigrahi.ee@nitrr.ac.in" },
-  { name: "Dr. Saurav Raj", role: "NIT Raipur", phone: "8470975763", email: "sraj.ee@nitrr.ac.in" }
+  { name: "Dr. R. N. Patel", role: "NIT Raipur", email: "rnpatel.ee@nitrr.ac.in" },
+  { name: "Dr. Monalisa Biswal", role: "NIT Raipur", email: "mbiswal.ele@nitrr.ac.in" },
+  { name: "Dr. Surajit Sannigrahi", role: "NIT Raipur", email: "ssannigrahi.ee@nitrr.ac.in" },
+  { name: "Dr. Saurav Raj", role: "NIT Raipur", email: "sraj.ee@nitrr.ac.in" }
 ];
 
 export const publicationChairs = [
@@ -33,7 +45,10 @@ export const publicationChairs = [
   { name: "Prof. Swapnajit Pattnaik", role: "NIT Raipur" },
   { name: "Prof. S. Ghosh", role: "NIT Raipur" },
   { name: "Dr. Sonti Venu", role: "NIT Raipur" },
-  { name: "Dr. Chilaka Ranga", role: "NIT Raipur" }
+  { name: "Dr. Chilaka Ranga", role: "NIT Raipur" },
+
+  // Added
+  { name: "Dr. B. Shaw", role: "NIT Raipur" }
 ];
 
 export const publicityChairs = [
@@ -45,21 +60,40 @@ export const publicityChairs = [
   { name: "Dr. Gauri Shankar", role: "IIT(ISM) Dhanbad" },
   { name: "Dr. Ashish Singhal", role: "SGI Bhopal" },
   { name: "Dr. Dipanshu Naware", role: "NIT Trichy" },
-  { name: "Dr. Srikant Misra", role: "GIET University, Gunupur" }
+  { name: "Dr. Srikant Misra", role: "GIET University, Gunupur" },
+
+  // Added
+  { name: "Prof. Archana Sharma", role: "NIT Raipur" }
 ];
 
 export const financeChairs = [
   { name: "Dr. P. D. Dewangan", role: "NIT Raipur" },
   { name: "Dr. Ebha Koley", role: "NIT Raipur" },
-  { name: "Dr. Ramya Selvaraj", role: "NIT Raipur" }
+  { name: "Dr. Ramya Selvaraj", role: "NIT Raipur" },
+
+  // Added
+  { name: "Dr. Varsha Singh", role: "NIT Raipur" }
 ];
 
 export const trackChairs = [
+  // Added
+  { name: "Dr. K. Chandrasekaran", role: "NIT Raipur" },
+  { name: "Dr. Hari Priya Vemuganti", role: "NIT Raipur" },
+  { name: "Dr. B. N. Bag", role: "NIT Raipur" },
+  { name: "Dr. Sonti Venu", role: "NIT Raipur" },
+
   { name: "Dr. Krishna Murari", role: "IIT Bhilai" },
   { name: "Dr. Shashank Kurmi", role: "IIT Bhilai" },
   { name: "Dr. Shailendra Kumar", role: "IIT Bhilai" },
   { name: "Dr. Om Hari Gupta", role: "NIT Jamshedpur" },
   { name: "Dr. Ravi Bhusan", role: "NIT Jamshedpur" },
+
+  // Added
+  { name: "Dr. Arpan Hota", role: "IIT Kharagpur" },
+  { name: "Dr. Satish Belkhode", role: "IIT Roorkee" },
+  { name: "Dr. Sateesh Kumar Kuncham", role: "NIT Trichy" },
+  { name: "Dr. Kiran Teeparthi", role: "NIT AP" },
+
   { name: "Dr. Kotsampopoulos Panos", role: "NTUA, Greece" },
   { name: "Dr. J. Ganesh", role: "CEA, New Delhi" },
   { name: "Dr. Saumendra Sarangi", role: "MNNIT Prayagraj" }
@@ -78,13 +112,12 @@ export const internationalAdvisory = [
   { name: "Prof. Biplab Sikdar", role: "National University of Singapore" },
   { name: "Dr. Brij N. Singh", role: "John Deere Inc, USA" },
   { name: "Prof. Koichi Takaki", role: "Iwate University, Japan" },
-  { name: "Prof. Tadashi Suetsugu", role: "Fukuoka University, Japan" }
+  { name: "Prof. Tadashi Suetsugu", role: "Fukuoka University, Japan" },
+  { name: "Prof. Nand Kishor", role: "Ostfold University, Norway" }
 ];
 
 export const nationalAdvisory = [
   { name: "Prof. Bijay Ketan Panigrahy", role: "IIT Delhi" },
-  { name: "Prof. Sukumar Mishra", role: "IIT(ISM) Dhanbad" },
-  { name: "Prof. Bidyadhar Subudhi", role: "NIT Warangal" },
   { name: "Prof. Manisha Dubey", role: "MANIT Bhopal" },
   { name: "Prof. Rajesh Kumar Nema", role: "MANIT Bhopal" },
   { name: "Prof. Savita Nema", role: "MANIT Bhopal" },
@@ -92,7 +125,8 @@ export const nationalAdvisory = [
   { name: "Prof. Ram Bilas Pachori", role: "IIT Indore" },
   { name: "Prof. Kiran Kumar Pattanaik", role: "IITM Gwalior" },
   { name: "Prof. Durgesh Kumar Mishra", role: "SAIT Indore" },
-  { name: "Prof. Sanjeev Singh", role: "MANIT Bhopal" }
+  { name: "Prof. Sanjeev Singh", role: "MANIT Bhopal" },
+  { name: "Prof. Soumya R Mohanty", role: "IITBHU" }
 ];
 
 export const technicalProgramCommittee = [
@@ -114,5 +148,11 @@ export const technicalProgramCommittee = [
   { name: "Dr. Ch. Ramulu", role: "NIT Warangal" },
   { name: "Dr. Nishant Kumar", role: "IIT Gandhinagar" },
   { name: "Dr. Aniruddha Bhattacharya", role: "NIT Durgapur" },
-  { name: "Dr. Ram Krishan", role: "NIT Warangal" }
+  { name: "Dr. Ram Krishan", role: "NIT Warangal" },
+
+  // Added
+  { name: "Mrs. Shravani Mathur", role: "IEEE MP Section" },
+  { name: "Mr. Akhilesh Tripathi", role: "RRCAT, Indore" },
+  { name: "Mrs. Rinki Upadhyay", role: "RRCAT, Indore" },
+  { name: "Dr. Ashish Singhal", role: "SISTE Bhopal" }
 ];
