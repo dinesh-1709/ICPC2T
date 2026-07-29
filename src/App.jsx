@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
@@ -13,6 +13,7 @@ const KeynoteSpeakers = lazy(() => import('./pages/KeynoteSpeakers'));
 const ImportantDates = lazy(() => import('./pages/ImportantDates'));
 const Registration = lazy(() => import('./pages/Registration'));
 const Submission = lazy(() => import('./pages/Submission'));
+const SpecialSession = lazy(() => import('./pages/SpecialSession'));
 const Venue = lazy(() => import('./pages/Venue'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const Downloads = lazy(() => import('./pages/Downloads'));
@@ -43,6 +44,8 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/about-nit-raipur" element={<AboutNIT />} />
               <Route path="/tracks" element={<Tracks />} />
+              <Route path="/submission" element={<Submission />} />
+              <Route path="/special-session" element={<SpecialSession />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/keynote-speakers" element={<KeynoteSpeakers />} />
               <Route path="/important-dates" element={<ImportantDates />} />
