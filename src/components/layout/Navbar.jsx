@@ -19,6 +19,7 @@ const navItems = [
       { label: 'Paper Submission', to: '/submission' },
     ]
   },
+  { label: 'Call for Special Session', to: '/special-session' },
   { label: 'Committee', to: '/committee' },
   { label: 'Speakers', to: '/keynote-speakers' },
   { label: 'Dates', to: '/important-dates' },
@@ -94,7 +95,7 @@ export default function Navbar() {
         <span className="opacity-90">IEEE Sponsored | ICPC2T 2027 | National Institute of Technology Raipur | March 3, 2027</span>
       </div>
       
-      <nav className="max-w-[1280px] mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
+      <nav className="max-w-[1400px] mx-auto px-4 lg:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 shrink-0 group">
           <div className="w-10 h-10 rounded-lg bg-blue-700 flex items-center justify-center shadow text-white font-bold text-sm leading-none font-sans group-hover:bg-blue-800 transition-colors">
@@ -107,7 +108,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden xl:flex items-center gap-1">
+        <div className="hidden xl:flex items-center gap-0.5 2xl:gap-1">
           {navItems.map((item) => (
             item.children ? (
               <div
@@ -117,7 +118,7 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  className={`flex items-center gap-1 px-2 2xl:px-2.5 py-2 text-[13px] 2xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap ${
                     openDropdown === item.label ? 'text-blue-700 bg-blue-50' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
                   }`}
                 >
@@ -131,7 +132,7 @@ export default function Navbar() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  `px-2 2xl:px-2.5 py-2 text-[13px] 2xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap ${
                     isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
                   }`
                 }
