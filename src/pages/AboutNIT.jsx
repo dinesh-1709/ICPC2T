@@ -41,7 +41,7 @@ export default function AboutNIT() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-3">Programs Offered</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    {['B.Tech. (Electrical Engineering)', 'M.Tech. (Power System)', 'M.Tech. (Control System)', 'Ph.D. (Electrical Engineering)'].map((p, i) => (
+                    {['B.Tech. (Electrical Engineering)', 'M.Tech. (Power System & Control)', 'Ph.D. (Electrical Engineering)'].map((p, i) => (
                       <li key={i} className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500" />{p}</li>
                     ))}
                   </ul>
@@ -49,7 +49,7 @@ export default function AboutNIT() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-3">Research Areas</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    {['Power Electronics & Drives', 'Renewable Energy Integration', 'Smart Grid Technologies', 'Control Systems & Optimization', 'AI for Power Systems'].map((p, i) => (
+                    {['Power Electronics & Drives', 'Renewable Energy Integration', 'Smart Grid Technologies', 'Control Systems & Optimization', 'Power System Protection', 'EV Technology'].map((p, i) => (
                       <li key={i} className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-500" />{p}</li>
                     ))}
                   </ul>

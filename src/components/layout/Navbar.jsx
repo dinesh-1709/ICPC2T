@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-
 const navItems = [
   { label: 'Home', to: '/' },
   {
@@ -25,10 +24,13 @@ const navItems = [
   { label: 'Dates', to: '/important-dates' },
   { label: 'Register', to: '/registration' },
   { label: 'Venue', to: '/venue' },
+
+  // Gallery
+  { label: 'Gallery', to: '/gallery' },
+
   { label: 'Downloads', to: '/downloads' },
   { label: 'Contact', to: '/contact' },
 ];
-
 function DropdownMenu({ items, isOpen, close }) {
   return (
     <AnimatePresence>

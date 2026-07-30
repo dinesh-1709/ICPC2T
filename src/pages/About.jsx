@@ -84,7 +84,7 @@ export default function About() {
               <h3 className="font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">Conference Stats</h3>
               <div className="grid grid-cols-2 gap-4 text-center">
                 {[
-                  { num: '4th',  label: 'Edition' },
+                  { num: '6th',  label: 'Edition' },
                   { num: '15+',  label: 'Tracks' },
                   { num: '2027', label: 'Year' },
                   { num: '100+', label: 'Expected Papers' },

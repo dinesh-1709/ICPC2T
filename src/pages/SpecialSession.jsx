@@ -11,8 +11,6 @@ const proposalRequirements = [
   { num: 1, title: 'Title of the Special Session', desc: 'A concise and informative title defining the theme of the special session.' },
   { num: 2, title: 'Scope & Description', desc: 'Approx. 300 words describing the area of concern, highlighting why it is an interesting and significant topic.' },
   { num: 3, title: 'Chairs & Organizers Info', desc: 'Name, contact info, and background of special session chairs (min 2, max 4) willing to promote and organize the session.' },
-  { num: 4, title: 'List of Potential Authors', desc: 'Minimum 10 potential authors along with their affiliation and details.' },
-  { num: 5, title: 'List of Potential Reviewers', desc: 'Minimum 10 potential qualified reviewers with their affiliations and contact details.' },
 ];
 
 const restrictions = [

@@ -8,7 +8,7 @@ const fadeUp = {
 
 const howToReach = [
   { icon: '✈️', title: 'By Air', desc: 'Swami Vivekananda Airport, Raipur is ~15 km from NIT Raipur. Prepaid taxis and app-cabs are available.' },
-  { icon: '🚂', title: 'By Train', desc: 'Raipur Railway Station is ~8 km from NIT Raipur. Autos, cabs, and buses are readily available.' },
+  { icon: '🚂', title: 'By Train', desc: 'Raipur Railway Station is ~5 km from NIT Raipur. Autos, cabs, and buses are readily available.' },
   { icon: '🚌', title: 'By Bus', desc: 'Raipur has interstate bus services from major cities. ISBT is near the railway station.' },
   { icon: '🚗', title: 'By Road', desc: 'NIT Raipur is well connected by road. NH-930 (Bilaspur-Raipur) passes nearby.' },
 ];
