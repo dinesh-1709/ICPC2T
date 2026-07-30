@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaPaperPlane, FaCalendarAlt, FaCheckCircle, FaFileAlt, FaUserTie, FaUsers, FaExclamationTriangle, FaAward, FaUserCheck, FaGlobeAmericas } from 'react-icons/fa';
+import { FaPaperPlane, FaDownload,FaCalendarAlt, FaCheckCircle, FaFileAlt, FaUserTie, FaUsers, FaExclamationTriangle, FaAward, FaUserCheck, FaGlobeAmericas } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
 
 const fadeUp = {
@@ -186,12 +186,26 @@ export default function SpecialSession() {
                 <div className="text-lg font-bold text-amber-400">September 30, 2026</div>
               </div>
 
-              <a 
-                href="mailto:icpc2t_2027@nitrr.ac.in?subject=Special%20Session%20Proposal%20-%20ICPC2T%202027" 
-                className="btn-primary w-full justify-center text-sm py-3 flex items-center gap-2 shadow-md bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold border-none"
-              >
-                <FaPaperPlane className="text-xs" /> Submit Proposal via Email
-              </a>
+            <div className="space-y-3">
+  {/* Submit via Email */}
+  <a 
+    href="mailto:icpc2t_2027@nitrr.ac.in?subject=Special%20Session%20Proposal%20-%20ICPC2T%202027"
+    className="btn-primary w-full justify-center text-sm py-3 flex items-center gap-2 shadow-md bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold border-none"
+  >
+    <FaPaperPlane className="text-xs" />
+    Submit Proposal
+  </a>
+
+  {/* Download Template */}
+  <a
+    href="/templates/updated special session template2.docx"
+    download
+    className="w-full justify-center text-sm py-3 px-4 flex items-center gap-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all duration-200"
+  >
+    <FaDownload className="text-xs" />
+    Download Proposal Template
+  </a>
+</div>
             </motion.div>
 
             {/* Global & Industry Preference Badge */}
