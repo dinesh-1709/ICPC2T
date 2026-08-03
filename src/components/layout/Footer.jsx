@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaEnvelope, FaMapMarkerAlt, FaExternalLinkAlt, FaDownload, FaPhone } from 'react-icons/fa';
+import brochurePdf from '../../assets/Brochure_NIT_Raipur_.pdf';
+import nitLogo from '../../assets/NIT_LOGO.jpg';
 
 const quickLinks = [
   { label: 'About Conference', to: '/about' },
@@ -13,7 +15,7 @@ const quickLinks = [
 ];
 
 const downloads = [
-  { label: 'Conference Brochure', href: '/Brochure_new.pdf' },
+  { label: 'Conference Brochure', href: brochurePdf },
   { label: 'IEEE Template (A4)', href: '/conference-template-a4.docx' },
   { label: 'IEEE Template (Letter)', href: '/conference-template-letter.docx' },
   { label: 'PPT Template', href: '/ICPC2T-2025_format.pptx' },
@@ -35,7 +37,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm shrink-0">IC</div>
+            <img src={nitLogo} alt="NIT Raipur Logo" className="h-10 w-auto object-contain rounded-md" />
             <div>
               <div className="font-bold text-white text-base leading-none">ICPC2T 2027</div>
               <div className="text-blue-400 text-[10px] font-semibold uppercase tracking-widest mt-0.5">NIT Raipur</div>

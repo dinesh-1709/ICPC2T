@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaDownload, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
+import { FaDownload, FaExternalLinkAlt, FaInfoCircle, FaArrowDown } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
 
 const fadeUp = {
@@ -99,13 +99,16 @@ export default function Registration() {
             </motion.div>
 
             {/* Bank Details */}
-            <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} custom={2} variants={fadeUp} className="card overflow-hidden">
+            <motion.div id="bank-details" initial="hidden" whileInView="show" viewport={{ once: true }} custom={2} variants={fadeUp} className="card overflow-hidden scroll-mt-28">
               <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
                 <h2 className="font-bold text-gray-900 text-lg">Bank Account Details</h2>
-                <a href="/bankdetails.pdf" target="_blank" rel="noopener noreferrer"
+
+                {/* PDF BUTTON */}
+                {/* <a href="/bankdetails.pdf" target="_blank" rel="noopener noreferrer"
                   className="btn-primary text-xs py-1.5 px-3 flex items-center gap-1.5">
-                  <FaDownload className="text-[10px]" /> PDF
-                </a>
+                  <FaDownload className="text-[10px]" />
+                </a> */}
+
               </div>
               <div className="overflow-x-auto">
                 <table className="data-table">
@@ -139,8 +142,15 @@ export default function Registration() {
                 <a href="/Registration.docx" target="_blank" rel="noopener noreferrer" className="btn-primary w-full justify-center text-sm py-2.5 flex items-center gap-2">
                   <FaDownload /> Registration Form
                 </a>
-                <a href="/bankdetails.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline w-full justify-center text-sm py-2.5 flex items-center gap-2">
-                  <FaDownload /> Bank Details PDF
+                <a
+                  href="#bank-details"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('bank-details')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="btn-outline w-full justify-center text-sm py-2.5 flex items-center gap-2 cursor-pointer"
+                >
+                  <FaArrowDown /> Bank Details
                 </a>
               </div>
             </motion.div>

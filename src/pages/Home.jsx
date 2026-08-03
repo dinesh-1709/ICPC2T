@@ -7,6 +7,7 @@ import {
 import Countdown from '../components/ui/Countdown';
 import SectionHeading from '../components/ui/SectionHeading';
 import tracks from '../data/tracksData';
+import brochurePdf from '../assets/Brochure_NIT_Raipur_.pdf';
 
 const importantDates = [
   { event: 'Paper Submission Opens',       date: '1 May 2026',      done: false },
@@ -81,7 +82,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3 text-white/90 text-sm sm:text-base mb-10"
           >
             <span className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-              <FaCalendarAlt className="text-amber-300" /> March 3, 2027
+              <FaCalendarAlt className="text-amber-300" /> 3rd - 5th March, 2027
             </span>
             <span className="hidden sm:block text-white/30">•</span>
             <span className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
@@ -100,8 +101,13 @@ export default function Home() {
             <Link to="/submission" className="btn-outline-white flex items-center gap-2">
               <FaPaperPlane /> Submit Paper
             </Link>
-            <a href="/Brochure_new.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline-white flex items-center gap-2">
-              <FaDownload /> Brochure
+            <a 
+              href={brochurePdf} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-outline-white flex items-center gap-2"
+            >
+              <FaFileAlt /> Brochure
             </a>
           </motion.div>
 
