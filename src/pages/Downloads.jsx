@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
+import brochurePdf from '../assets/Brochure_NIT_Raipur_.pdf';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -8,7 +9,7 @@ const fadeUp = {
 };
 
 const downloads = [
-  { title: 'Conference Brochure',         desc: 'Detailed conference information and scope', file: '/Brochure_new.pdf',                      size: '811 KB', color: 'border-t-blue-600' },
+  { title: 'Conference Brochure',         desc: 'Detailed conference information and scope', file: brochurePdf,                            size: '408 KB', color: 'border-t-blue-600' },
   { title: 'IEEE Template (A4)',           desc: 'IEEE paper template — A4 paper size',        file: '/conference-template-a4.docx',            size: '30 KB',  color: 'border-t-blue-600' },
   { title: 'IEEE Template (Letter)',       desc: 'IEEE paper template — US Letter size',        file: '/conference-template-letter.docx',         size: '30 KB',  color: 'border-t-blue-600' },
   { title: 'PPT Template',                desc: 'Presentation template for the conference',    file: '/ICPC2T-2025_format.pptx',               size: '831 KB', color: 'border-t-amber-500' },

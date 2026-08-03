@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
+import brochurePdf from '../assets/Brochure_NIT_Raipur_.pdf';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -119,7 +120,7 @@ export default function Submission() {
                   { label: 'IEEE Template (Letter)',     href: '/conference-template-letter.docx' },
                   { label: 'PPT Template',               href: '/ICPC2T-2025_format.pptx' },
                   { label: 'Camera Ready Instructions',  href: '/CAMERAREADY Instruction (2).pdf' },
-                  { label: 'Conference Brochure',        href: '/Brochure_new.pdf' },
+                  { label: 'Conference Brochure',        href: brochurePdf },
                 ].map((dl) => (
                   <a key={dl.href} href={dl.href} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-blue-700 p-3 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all">
