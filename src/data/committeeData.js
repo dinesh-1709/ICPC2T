@@ -20,8 +20,7 @@ export const honoraryChairs = [
   { name: "Prof. Bidyadhar Subudhi", role: "NIT Warangal" },
   { name: "Prof. Nikos Hatziargyriou", role: "NTUA, Greece" },
   { name: "Prof. N. P. Padhy", role: "MNIT Jaipur" },
-  { name: "Prof. Ashok Kumar Pradhan", role: "IIT Kharagpur" },
-  { name: "Prof. Bijay Ketan Panigrahy", role: "IIT Delhi" }
+  { name: "Prof. Ashok Kumar Pradhan", role: "IIT Kharagpur" }
 ];
 
 // Added
@@ -117,7 +116,6 @@ export const internationalAdvisory = [
 ];
 
 export const nationalAdvisory = [
-  { name: "Prof. Bijay Ketan Panigrahy", role: "IIT Delhi" },
   { name: "Prof. Manisha Dubey", role: "MANIT Bhopal" },
   { name: "Prof. Rajesh Kumar Nema", role: "MANIT Bhopal" },
   { name: "Prof. Savita Nema", role: "MANIT Bhopal" },
