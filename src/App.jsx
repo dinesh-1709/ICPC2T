@@ -14,6 +14,7 @@ const ImportantDates = lazy(() => import('./pages/ImportantDates'));
 const Registration = lazy(() => import('./pages/Registration'));
 const Submission = lazy(() => import('./pages/Submission'));
 const SpecialSession = lazy(() => import('./pages/SpecialSession'));
+const SpecialSessions = lazy(() => import('./pages/SpecialSessions'));
 const Venue = lazy(() => import('./pages/Venue'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const Downloads = lazy(() => import('./pages/Downloads'));
@@ -46,11 +47,11 @@ function App() {
               <Route path="/tracks" element={<Tracks />} />
               <Route path="/submission" element={<Submission />} />
               <Route path="/special-session" element={<SpecialSession />} />
+              <Route path="/special-sessions" element={<SpecialSessions />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/keynote-speakers" element={<KeynoteSpeakers />} />
               <Route path="/important-dates" element={<ImportantDates />} />
               <Route path="/registration" element={<Registration />} />
-              <Route path="/submission" element={<Submission />} />
               <Route path="/venue" element={<Venue />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/downloads" element={<Downloads />} />

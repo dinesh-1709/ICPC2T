@@ -196,9 +196,19 @@ export default function SpecialSession() {
     Submit Proposal
   </a>
 
+  {/* Download Application Form */}
+  <a
+    href="/special-session-application.docx"
+    download
+    className="w-full justify-center text-sm py-3 px-4 flex items-center gap-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all duration-200"
+  >
+    <FaDownload className="text-xs" />
+    Download Application Form
+  </a>
+
   {/* Download Template */}
   <a
-    href="/templates/updated special session template2.docx"
+    href="/special-session-template.docx"
     download
     className="w-full justify-center text-sm py-3 px-4 flex items-center gap-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all duration-200"
   >

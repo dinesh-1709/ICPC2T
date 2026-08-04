@@ -8,14 +8,15 @@ import Countdown from '../components/ui/Countdown';
 import SectionHeading from '../components/ui/SectionHeading';
 import tracks from '../data/tracksData';
 import brochurePdf from '../assets/Brochure_NIT_Raipur_.pdf';
+import heroBg from '../assets/hero.jpeg';
 
 const importantDates = [
-  { event: 'Paper Submission Opens',       date: '1 May 2026',      done: false },
-  { event: 'Full Paper Submission Deadline', date: '31 Oct 2026',    done: false },
-  { event: 'Acceptance Notification',       date: '15 Nov 2026',    done: false },
-  { event: 'Camera Ready Paper Due',        date: '15 Dec 2026',    done: false },
-  { event: 'Registration Deadline',         date: '15 Jan 2027',    done: false },
-  { event: 'Conference Dates',              date: 'March 3, 2027',  done: false, highlight: true },
+  { event: 'Paper Submission Opens', date: '1 May 2026', done: false },
+  { event: 'Full Paper Submission Deadline', date: '31 Oct 2026', done: false },
+  { event: 'Acceptance Notification', date: '15 Nov 2026', done: false },
+  { event: 'Camera Ready Paper Due', date: '15 Dec 2026', done: false },
+  { event: 'Registration Deadline', date: '15 Jan 2027', done: false },
+  { event: 'Conference Dates', date: 'March 3, 2027', done: false, highlight: true },
 ];
 
 const prevProceedings = [
@@ -35,7 +36,7 @@ const highlights = [
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
-  show:   (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] } })
+  show: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] } })
 };
 
 export default function Home() {
@@ -45,7 +46,12 @@ export default function Home() {
       {/* ─── HERO ───────────────────────────────────── */}
       <section
         className="relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%)' }}
+        style={{
+          background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         {/* Subtle pattern */}
         <div className="absolute inset-0 opacity-5"
@@ -54,7 +60,7 @@ export default function Home() {
         {/* Bottom wave */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 80L60 74.7C120 69.3 240 58.7 360 53.3C480 48 600 48 720 53.3C840 58.7 960 69.3 1080 74.7C1200 80 1320 80 1380 80H1440V80H0V80Z" fill="#fffbf7"/>
+            <path d="M0 80L60 74.7C120 69.3 240 58.7 360 53.3C480 48 600 48 720 53.3C840 58.7 960 69.3 1080 74.7C1200 80 1320 80 1380 80H1440V80H0V80Z" fill="#fffbf7" />
           </svg>
         </div>
 
@@ -101,10 +107,10 @@ export default function Home() {
             <Link to="/submission" className="btn-outline-white flex items-center gap-2">
               <FaPaperPlane /> Submit Paper
             </Link>
-            <a 
-              href={brochurePdf} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={brochurePdf}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-outline-white flex items-center gap-2"
             >
               <FaFileAlt /> Brochure
@@ -168,7 +174,7 @@ export default function Home() {
               <div className="mt-6 pt-6 border-t border-gray-100 grid grid-cols-3 gap-4 text-center">
                 {[
                   { num: '15+', label: 'Technical Tracks' },
-                  { num: '4th', label: 'Edition' },
+                  { num: '6th', label: 'Edition' },
                   { num: '2027', label: 'Next Conference' },
                 ].map((s) => (
                   <div key={s.num}>
@@ -226,9 +232,8 @@ export default function Home() {
           <div className="card overflow-hidden">
             {importantDates.map((d, i) => (
               <motion.div key={i} initial="hidden" whileInView="show" viewport={{ once: true }} custom={i * 0.4} variants={fadeUp}
-                className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-4 border-b border-gray-100 last:border-b-0 ${
-                  d.highlight ? 'bg-blue-600 text-white' : 'hover:bg-gray-50'
-                }`}
+                className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-4 border-b border-gray-100 last:border-b-0 ${d.highlight ? 'bg-blue-600 text-white' : 'hover:bg-gray-50'
+                  }`}
               >
                 <div className="flex items-center gap-3">
                   <FaCalendarAlt className={`shrink-0 ${d.highlight ? 'text-blue-200' : 'text-blue-600'}`} />

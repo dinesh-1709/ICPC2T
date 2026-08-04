@@ -116,11 +116,10 @@ export default function Submission() {
               <h3 className="font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">Downloads</h3>
               <div className="space-y-2">
                 {[
-                  { label: 'IEEE Template (A4)',         href: '/conference-template-a4.docx' },
-                  { label: 'IEEE Template (Letter)',     href: '/conference-template-letter.docx' },
-                  { label: 'PPT Template',               href: '/ICPC2T-2025_format.pptx' },
-                  { label: 'Camera Ready Instructions',  href: '/CAMERAREADY Instruction (2).pdf' },
                   { label: 'Conference Brochure',        href: brochurePdf },
+                  { label: 'IEEE Templates',             href: 'https://www.ieee.org/conferences/publishing/templates.html' },
+                  { label: 'Special Session Application Form', href: '/special-session-application.docx' },
+                  { label: 'Special Session Template',   href: '/special-session-template.docx' },
                 ].map((dl) => (
                   <a key={dl.href} href={dl.href} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-blue-700 p-3 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all">

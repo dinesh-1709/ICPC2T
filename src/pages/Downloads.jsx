@@ -10,12 +10,9 @@ const fadeUp = {
 
 const downloads = [
   { title: 'Conference Brochure',         desc: 'Detailed conference information and scope', file: brochurePdf,                            size: '408 KB', color: 'border-t-blue-600' },
-  { title: 'IEEE Template (A4)',           desc: 'IEEE paper template — A4 paper size',        file: '/conference-template-a4.docx',            size: '30 KB',  color: 'border-t-blue-600' },
-  { title: 'IEEE Template (Letter)',       desc: 'IEEE paper template — US Letter size',        file: '/conference-template-letter.docx',         size: '30 KB',  color: 'border-t-blue-600' },
-  { title: 'PPT Template',                desc: 'Presentation template for the conference',    file: '/ICPC2T-2025_format.pptx',               size: '831 KB', color: 'border-t-amber-500' },
-  { title: 'Bank Details',                desc: 'Bank account details for fee payment',        file: '/bankdetails.pdf',                         size: '174 KB', color: 'border-t-green-600' },
-  { title: 'Registration Form',           desc: 'Fill and submit along with payment proof',    file: '/Registration.docx',                      size: '16 KB',  color: 'border-t-green-600' },
-  { title: 'Camera Ready Instructions',   desc: 'Guidelines for final manuscript submission',  file: '/CAMERAREADY Instruction (2).pdf',        size: '446 KB', color: 'border-t-red-500'  },
+  { title: 'IEEE Templates',              desc: 'IEEE paper template',                       file: 'https://www.ieee.org/conferences/publishing/templates.html', size: 'External Link', color: 'border-t-blue-600' },
+  { title: 'Special Session Application Form', desc: 'Application form for organizing special sessions', file: '/special-session-application.docx', size: 'Demo File', color: 'border-t-amber-500' },
+  { title: 'Special Session Template',    desc: 'Template for special session submissions', file: '/special-session-template.docx', size: 'Demo File', color: 'border-t-green-600' },
 ];
 
 export default function Downloads() {

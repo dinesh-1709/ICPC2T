@@ -17,9 +17,15 @@ const navItems = [
     children: [
       { label: 'Conference Tracks', to: '/tracks' },
       { label: 'Paper Submission', to: '/submission' },
+      { label: 'Call for Special Session', to: '/special-session' },
     ]
   },
-  { label: 'Call for Special Session', to: '/special-session' },
+  {
+    label: 'Special Sessions',
+    children: [
+      { label: 'Special Sessions', to: '/special-sessions' },
+    ]
+  },
   { label: 'Committee', to: '/committee' },
   { label: 'Speakers', to: '/keynote-speakers' },
   { label: 'Dates', to: '/important-dates' },
@@ -46,8 +52,7 @@ function DropdownMenu({ items, isOpen, close }) {
               to={item.to}
               onClick={close}
               className={({ isActive }) =>
-                `block px-4 py-2.5 text-xs xl:text-sm font-medium transition-colors hover:bg-blue-50/80 hover:text-blue-700 ${
-                  isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-700'
+                `block px-4 py-2.5 text-xs xl:text-sm font-medium transition-colors hover:bg-blue-50/80 hover:text-blue-700 ${isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-700'
                 }`
               }
             >
@@ -62,7 +67,7 @@ function DropdownMenu({ items, isOpen, close }) {
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled]     = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileExpanded, setMobileExpanded] = useState(null);
   const navRef = useRef(null);
@@ -94,7 +99,7 @@ export default function Navbar() {
       <div className="bg-blue-800 text-white text-xs py-1.5 px-4 text-center font-medium">
         <span className="opacity-90">IEEE Sponsored | ICPC2T 2027 | National Institute of Technology Raipur | 3<sup>rd</sup> - 5<sup>th</sup> March, 2027</span>
       </div>
-      
+
       <nav className="max-w-[1440px] mx-auto px-4 lg:px-6 flex items-center justify-between h-16 sm:h-18 gap-3">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 shrink-0 group py-1">
@@ -116,9 +121,8 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className={`flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${
-                    openDropdown === item.label ? 'text-blue-700 bg-blue-50/80 font-semibold' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50/60'
-                  }`}
+                  className={`flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${openDropdown === item.label ? 'text-blue-700 bg-blue-50/80 font-semibold' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50/60'
+                    }`}
                 >
                   {item.label}
                   <FaChevronDown className={`text-[9px] transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
@@ -130,8 +134,7 @@ export default function Navbar() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `px-2 xl:px-2.5 2xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${
-                    isActive ? 'text-blue-700 bg-blue-50/80 font-semibold shadow-xs' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50/60'
+                  `px-2 xl:px-2.5 2xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${isActive ? 'text-blue-700 bg-blue-50/80 font-semibold shadow-xs' : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50/60'
                   }`
                 }
               >

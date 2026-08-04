@@ -16,11 +16,9 @@ const quickLinks = [
 
 const downloads = [
   { label: 'Conference Brochure', href: brochurePdf },
-  { label: 'IEEE Template (A4)', href: '/conference-template-a4.docx' },
-  { label: 'IEEE Template (Letter)', href: '/conference-template-letter.docx' },
-  { label: 'PPT Template', href: '/ICPC2T-2025_format.pptx' },
-  { label: 'Bank Details', href: '/bankdetails.pdf' },
-  { label: 'Registration Form', href: '/Registration.docx' },
+  { label: 'IEEE Templates', href: 'https://www.ieee.org/conferences/publishing/templates.html', target: '_blank', rel: 'noopener noreferrer' },
+  { label: 'Special Session Application Form', href: '/special-session-application.docx' },
+  { label: 'Special Session Template', href: '/special-session-template.docx' },
 ];
 
 const prevProceedings = [

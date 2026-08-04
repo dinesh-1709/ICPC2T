@@ -13,15 +13,6 @@ const feeData = [
   { category: 'Industry Professional',       ieeeINR: '₹10,000', ieeeUSD: '$350', nonIeeeINR: '₹11,000', nonIeeeUSD: '$400' },
 ];
 
-const bankDetails = [
-  { label: 'Account Name',   value: 'Director NIT Raipur' },
-  { label: 'Account No.',    value: '30042955244' },
-  { label: 'IFSC Code',      value: 'SBIN0002852' },
-  { label: 'Swift Code',     value: 'SBININBB646' },
-  { label: 'Bank Name',      value: 'State Bank of India' },
-  { label: 'Branch Name',    value: 'NIT Branch' },
-  { label: 'Branch Address', value: 'G. E. Road, Raipur (C.G.) 492010' },
-];
 
 const prevProceedings = [
   { year: 2020, url: 'https://ieeexplore.ieee.org/xpl/conhome/9051868/proceeding' },
@@ -51,10 +42,7 @@ export default function Registration() {
               <FaInfoCircle className="text-blue-600 text-xl mt-0.5 shrink-0" />
               <div className="text-sm text-gray-700 leading-relaxed">
                 <p className="font-semibold text-gray-900 mb-2">Registration Process</p>
-                <p>Pay the registration fee directly to the bank account below. Then send the completed registration form along with payment proof to{' '}
-                  <a href="mailto:icpc2t_2027@nitrr.ac.in" className="text-blue-600 font-semibold hover:underline">icpc2t_2027@nitrr.ac.in</a>{' '}
-                  on or before <strong>15th January, 2027</strong>.
-                </p>
+                <p>Registration details will be updated soon. Please check back later.</p>
               </div>
             </motion.div>
 
@@ -98,32 +86,6 @@ export default function Registration() {
               </div>
             </motion.div>
 
-            {/* Bank Details */}
-            <motion.div id="bank-details" initial="hidden" whileInView="show" viewport={{ once: true }} custom={2} variants={fadeUp} className="card overflow-hidden scroll-mt-28">
-              <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-                <h2 className="font-bold text-gray-900 text-lg">Bank Account Details</h2>
-
-                {/* PDF BUTTON */}
-                {/* <a href="/bankdetails.pdf" target="_blank" rel="noopener noreferrer"
-                  className="btn-primary text-xs py-1.5 px-3 flex items-center gap-1.5">
-                  <FaDownload className="text-[10px]" />
-                </a> */}
-
-              </div>
-              <div className="overflow-x-auto">
-                <table className="data-table">
-                  <tbody>
-                    {bankDetails.map((row, i) => (
-                      <tr key={i}>
-                        <td className="font-semibold text-gray-600 w-48 text-xs uppercase tracking-wide">{row.label}</td>
-                        <td className="font-mono text-gray-900 font-medium">{row.value}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </motion.div>
-
             {/* IEEE Note */}
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} custom={3} variants={fadeUp}
               className="card p-6 border-l-4 border-l-amber-500 bg-amber-50"
@@ -136,24 +98,6 @@ export default function Registration() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} custom={0.5} variants={fadeUp} className="card p-6">
-              <h3 className="font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">Quick Downloads</h3>
-              <div className="space-y-3">
-                <a href="/Registration.docx" target="_blank" rel="noopener noreferrer" className="btn-primary w-full justify-center text-sm py-2.5 flex items-center gap-2">
-                  <FaDownload /> Registration Form
-                </a>
-                <a
-                  href="#bank-details"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('bank-details')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="btn-outline w-full justify-center text-sm py-2.5 flex items-center gap-2 cursor-pointer"
-                >
-                  <FaArrowDown /> Bank Details
-                </a>
-              </div>
-            </motion.div>
 
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} custom={1} variants={fadeUp} className="card p-6">
               <h3 className="font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">Registration Deadline</h3>
