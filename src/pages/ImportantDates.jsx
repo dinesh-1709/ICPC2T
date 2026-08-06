@@ -13,7 +13,7 @@ const dates = [
   { event: 'Acceptance Notification',        date: '15th November, 2026',  icon: '✉️', highlight: false },
   { event: 'Camera Ready Paper Due',         date: '15th December, 2026',  icon: '📄', highlight: false },
   { event: 'Registration Deadline',          date: '15th January, 2027',   icon: '🏷️', highlight: false },
-  { event: 'Conference Dates',               date: 'March 3, 2027',        icon: '🎓', highlight: true },
+  { event: 'Conference Dates',               date: 'March 3, 2027',        icon: '🎓', highlight: false },
 ];
 
 export default function ImportantDates() {
