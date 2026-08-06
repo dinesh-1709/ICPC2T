@@ -13,7 +13,7 @@ const KeynoteSpeakers = lazy(() => import('./pages/KeynoteSpeakers'));
 const ImportantDates = lazy(() => import('./pages/ImportantDates'));
 const Registration = lazy(() => import('./pages/Registration'));
 const Submission = lazy(() => import('./pages/Submission'));
-const SpecialSession = lazy(() => import('./pages/SpecialSession'));
+const CallforSpecialSession = lazy(() => import('./pages/CallforSpecialSession'));
 const SpecialSessions = lazy(() => import('./pages/SpecialSessions'));
 const Venue = lazy(() => import('./pages/Venue'));
 const Gallery = lazy(() => import('./pages/Gallery'));
@@ -46,7 +46,7 @@ function App() {
               <Route path="/about-nit-raipur" element={<AboutNIT />} />
               <Route path="/tracks" element={<Tracks />} />
               <Route path="/submission" element={<Submission />} />
-              <Route path="/special-session" element={<SpecialSession />} />
+              <Route path="/special-session" element={<CallforSpecialSession />} />
               <Route path="/special-sessions" element={<SpecialSessions />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/keynote-speakers" element={<KeynoteSpeakers />} />

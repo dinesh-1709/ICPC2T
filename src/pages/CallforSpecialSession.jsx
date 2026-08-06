@@ -20,7 +20,7 @@ const restrictions = [
   { code: 'D', text: 'Preference will be given to Special Sessions with at least one (1) internationally affiliated organizer and/or industry professional to promote global and industrial outreach.' },
 ];
 
-export default function SpecialSession() {
+export default function CallforSpecialSession() {
   return (
     <div className="pt-[88px] bg-[#fffbf7] min-h-screen">
       {/* Banner */}
