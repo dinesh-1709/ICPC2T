@@ -20,12 +20,7 @@ const navItems = [
       { label: 'Call for Special Session', to: '/special-session' },
     ]
   },
-  {
-    label: 'Special Sessions',
-    children: [
-      { label: 'Special Sessions', to: '/special-sessions' },
-    ]
-  },
+  { label: 'Special Sessions', to: '/special-sessions' },
   { label: 'Committee', to: '/committee' },
   { label: 'Speakers', to: '/keynote-speakers' },
   { label: 'Dates', to: '/important-dates' },
