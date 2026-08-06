@@ -80,7 +80,7 @@ export const trackChairs = [
   { name: "Dr. Hari Priya Vemuganti", role: "NIT Raipur" },
   { name: "Dr. B. N. Bag", role: "NIT Raipur" },
   { name: "Dr. Sonti Venu", role: "NIT Raipur" },
-
+  { name: "Dr. Manohar Mishra", role: "SoA University,Bhubaneshwar" },
   { name: "Dr. Krishna Murari", role: "IIT Bhilai" },
   { name: "Dr. Shashank Kurmi", role: "IIT Bhilai" },
   { name: "Dr. Shailendra Kumar", role: "IIT Bhilai" },
@@ -139,7 +139,7 @@ export const technicalProgramCommittee = [
   { name: "Dr. Rohit Bhakar", role: "MNIT, Jaipur" },
   { name: "Dr. Srinivas Bhaskar Karanki", role: "IIT Bhubaneswar" },
   { name: "Dr. O. H. Gupta", role: "NIT Jamshedpur" },
-  { name: "Dr. Papia Ray", role: "VSSUT Burla" },
+  { name: "Dr. Papia Ray", role: "NITTTR,Kolkata" },
   { name: "Dr. Ritesh Keshri", role: "VNIT Nagpur" },
   { name: "Dr. A. Kirubakaran", role: "NIT Warangal" },
   { name: "Dr. B. Venugopal Reddy", role: "NIT Warangal" },
