@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
 import brochurePdf from '../assets/Brochure_NIT_Raipur_.pdf';
 
@@ -27,6 +27,17 @@ export default function Submission() {
           <h1 className="text-3xl sm:text-4xl font-bold">Submission Guidelines</h1>
           <div className="h-1 w-14 rounded-full bg-amber-400 mx-auto mt-4" />
           <p className="text-blue-100 mt-4 text-sm">ICPC2T 2027 — Call for Papers</p>
+          <div className="mt-6">
+            <a
+              href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold px-6 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
+            >
+              <span>CMT Submission Portal</span>
+              <FaExternalLinkAlt className="text-xs" />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -40,7 +51,7 @@ export default function Submission() {
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>ICPC2T 2027 invites full-length original research contributions from researchers, professionals from industries, R&D organizations, academic institutions, and government departments worldwide.</p>
                 <p>Manuscripts not exceeding <strong className="text-gray-900">six (6) pages</strong> in IEEE double column format are accepted. Papers must be original, unpublished, and not under review elsewhere.</p>
-                <p>Submissions must be made electronically via the <strong className="text-gray-900">CMT portal</strong> (Microsoft Research). All submitted manuscripts undergo rigorous peer review.</p>
+                <p>Submissions must be made electronically via the <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1">CMT portal <FaExternalLinkAlt className="text-[10px]" /></a> (Microsoft Research). All submitted manuscripts undergo rigorous peer review.</p>
               </div>
               <div className="mt-5 bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-3 text-sm">
                 <span className="text-2xl">🏆</span>
@@ -93,13 +104,13 @@ export default function Submission() {
               <div className="h-0.5 w-10 bg-blue-600 rounded-full mb-5" />
               <ol className="space-y-4">
                 {[
-                  'Log in to CMT to view reviewer comments and upload the final camera-ready paper.',
+                  <>Log in to <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">CMT</a> to view reviewer comments and upload the final camera-ready paper.</>,
                   'Camera-ready papers must strictly follow the IEEE Template. Non-compliant papers may not appear in IEEE Xplore.',
                   'Plagiarism must be below 30% (using standard plagiarism checking software).',
                   'Maximum 6 pages. Up to 2 additional over-length pages allowed with extra charges. Absolute maximum: 8 pages.',
                   <>Check PDF compliance at <a href="https://www.pdf-express.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">pdf-express.org</a> — Conference Code: <strong className="text-gray-900">72973#</strong></>,
                   'At least one author must register and present the paper (hybrid mode) for IEEE Xplore inclusion.',
-                  'Submit camera-ready by 15th January 2027. Upload IEEE Copyright Form via CMT portal.',
+                  <>Submit camera-ready by 15th January 2027. Upload IEEE Copyright Form via <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">CMT portal</a>.</>,
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
                     <span className="w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">{i + 1}</span>

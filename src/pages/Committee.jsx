@@ -4,6 +4,7 @@ import {
   chiefPatron,
   patrons,
   honoraryChairs,
+  industrialChairs,
   generalChairs,
   organizingSecretaries,
   publicationChairs,
@@ -148,6 +149,11 @@ export default function Committee() {
         />
 
         <CommitteeSection
+          title="Industrial Chair"
+          members={industrialChairs}
+          cols={2}
+        />
+        <CommitteeSection
           title="General Chairperson"
           members={generalChairs}
           cols={2}
@@ -182,7 +188,6 @@ export default function Committee() {
         <div className="mt-16 pt-10 border-t border-gray-200">
           <SectionHeading
             title="Advisory Board"
-            subtitle="(Tentative)"
           />
 
           <CommitteeSection
@@ -198,7 +203,7 @@ export default function Committee() {
 
         <div className="mt-10 pt-10 border-t border-gray-200">
           <CommitteeSection
-            title="Technical Program Committee (Tentative)"
+            title="Technical Program Committee"
             members={technicalProgramCommittee}
           />
         </div>
