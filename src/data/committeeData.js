@@ -4,8 +4,8 @@ export const chiefPatron = [
 
 export const patrons = [
   { name: "Prof. Dr. Guru Prasad Subas Chandra Mishra", role: "Dean (R&C), NIT Raipur" },
-  { name: "Dr. Geetam Tomar", role: "Director, Govt Engg. College, Sonbhadra, UP" },
-  { name: "Shri. M K Badapanda", role: "RRCAT, Indore, Madhya Pradesh" },
+  { name: "Dr. Geetam Tomar", role: "Chair IEEE Madhya Pradesh Section" },
+  { name: "Shri. M K Badapanda", role: "Chair IEEE PELS & IAS Madhya Pradesh Chapters" },
 
   // Added
   { name: "Prof. Narendra D. Londhe", role: "NIT Raipur" },
@@ -24,7 +24,7 @@ export const honoraryChairs = [
 ];
 
 // Added
-export const industrialChair = [
+export const industrialChairs = [
   { name: "Er. Hemant Verma", role: "Tripura Electricity Regulatory Commission" }
 ];
 
