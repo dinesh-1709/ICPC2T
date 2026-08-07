@@ -20,9 +20,12 @@ import junyanImg from '../assets/SpecialSession/Organizing chairs images/Dr. Jun
 import wentingImg from '../assets/SpecialSession/Organizing chairs images/Dr. Wenting Wang, Peking University.png';
 import yipingImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yiping Yuan MJP, University of Electronic Science and Technology of China.png';
 import yujiaImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yujia Huang, Shenyang University of Technology.png';
-import sheilaImg from "../assets/SpecialSession/Organizing chairs images/sheila.png";
-import yogeshImgg from "../assets/SpecialSession/Organizing chairs images/yogesh.png";
-import hemaniImg from "../assets/SpecialSession/Organizing chairs images/hemani.png";
+import sheilaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Sheila Mahapatra, Alliance University, Bangalore.png";
+import hemaniImg from "../assets/SpecialSession/Organizing chairs images/Dr. Hemani Kaushal, University of North Florida, USA.png";
+import PankajImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pankaj Kumar, Manipal Academy of Higher Education, Manipal , India.png";
+import BrajeshImg from "../assets/SpecialSession/Organizing chairs images/Dr. Brajesh Kumar, Government Engineering College Jamui, Bihar, India.png";
+import AkshayImg from "../assets/SpecialSession/Organizing chairs images/Dr. Akshay Kumar, PSCAD Engineer, Manav Energy, Begaluru, India.png";
+import MukeshImg from "../assets/SpecialSession/Organizing chairs images/Dr. Mukesh Kumar, Government Engineering College Jamui, Bihar, India.png";
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   show:   (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: i * 0.05 } })
@@ -30,6 +33,8 @@ const fadeUp = {
 
 // Placeholder data for Special Sessions
 const specialSessionsData = [
+
+  // SS1  -->
   {
     id: 1,
     title: "Special Session 1: Intelligent Materials and Electrochemical Technologies for Power, Hydrogen, Energy Storage and Sensing Applications",
@@ -53,6 +58,8 @@ const specialSessionsData = [
       }
     ]
   },
+
+  // SS2  -->
   {
     id: 2,
     title: "Special Session 2: Energy-Efficient AI, Intelligent Control, and Edge Computing for Sustainable Power and Smart Energy Systems",
@@ -82,6 +89,7 @@ const specialSessionsData = [
     ]
   },
 
+  // SS3 -->
   {
     id: 3,
     title: "Special Session 3: AI Data Centers: Power, Computing and Intelligent Energy Management",
@@ -110,6 +118,8 @@ const specialSessionsData = [
       }
     ]
   },
+
+  // SS4 -->
   {
   id: 4,
   title: "Special Session 4: Intelligent Energy Optimization for Power, Control and Computing Systems",
@@ -125,13 +135,44 @@ const specialSessionsData = [
     {
       name: "Dr. Yogesh Kumar K",
       designation: "Alliance University, Bangalore",
-      photoUrl: yogeshImgg,
+      photoUrl: yogeshImg,
     },
     {
       name: "Dr. Hemani Kaushal",
       designation: "University of North Florida, USA",
       photoUrl: hemaniImg,
+    }
+  ],
+},
+
+  // SS6 -->
+  {
+  id: 6,
+  title: "Special Session 6: Advancing Efficient Electrical Drives, Electric Vehicles, and Sustainable Power Systems",
+  pdfUrl: SS4Pdf,
+  instructions:
+    'After login, select Special Session (SS6): “Advancing Efficient Electrical Drives, Electric Vehicles, and Sustainable Power Systems”',
+  chairs: [
+    {
+      name: "Dr. Mukesh Kumar",
+      designation: "Government Engineering College Jamui, Bihar, India",
+      photoUrl: MukeshImg,
     },
+    {
+      name: "Dr. Akshay Kumar",
+      designation: "PSCAD Engineer, Manav Energy, Begaluru, India",
+      photoUrl: AkshayImg,
+    },
+    {
+      name: "Dr. Brajesh Kumar",
+      designation: "Government Engineering College Jamui, Bihar, India",
+      photoUrl: BrajeshImg,
+    },
+    {
+      name: "Dr. Pankaj Kumar",
+      designation: "Manipal Academy of Higher Education, Manipal , India",
+      photoUrl: PankajImg,
+    }
   ],
 }
 ];
