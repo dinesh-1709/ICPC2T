@@ -6,6 +6,7 @@ import SectionHeading from '../components/ui/SectionHeading';
 import ss1Pdf from '../assets/SpecialSession/SS pdf/SS1.pdf';
 import ss2Pdf from '../assets/SpecialSession/SS pdf/SS2.pdf';
 import ss3Pdf from '../assets/SpecialSession/SS pdf/SS3.pdf';
+import SS4Pdf from "../assets/SpecialSession/SS pdf/SS4.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -19,7 +20,9 @@ import junyanImg from '../assets/SpecialSession/Organizing chairs images/Dr. Jun
 import wentingImg from '../assets/SpecialSession/Organizing chairs images/Dr. Wenting Wang, Peking University.png';
 import yipingImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yiping Yuan MJP, University of Electronic Science and Technology of China.png';
 import yujiaImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yujia Huang, Shenyang University of Technology.png';
-
+import sheilaImg from "../assets/SpecialSession/Organizing chairs images/sheila.png";
+import yogeshImgg from "../assets/SpecialSession/Organizing chairs images/yogesh.png";
+import hemaniImg from "../assets/SpecialSession/Organizing chairs images/hemani.png";
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   show:   (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: i * 0.05 } })
@@ -78,6 +81,7 @@ const specialSessionsData = [
       }
     ]
   },
+
   {
     id: 3,
     title: "Special Session 3: AI Data Centers: Power, Computing and Intelligent Energy Management",
@@ -105,7 +109,31 @@ const specialSessionsData = [
         photoUrl: yujiaImg
       }
     ]
-  }
+  },
+  {
+  id: 4,
+  title: "Special Session 4: Intelligent Energy Optimization for Power, Control and Computing Systems",
+  pdfUrl: SS4Pdf,
+  instructions:
+    'After login, select Special Session (SS4): "Intelligent Energy Optimization for Power, Control and Computing Systems"',
+  chairs: [
+    {
+      name: "Dr. Sheila Mahapatra",
+      designation: "Alliance University, Bangalore",
+      photoUrl: sheilaImg,
+    },
+    {
+      name: "Dr. Yogesh Kumar K",
+      designation: "Alliance University, Bangalore",
+      photoUrl: yogeshImgg,
+    },
+    {
+      name: "Dr. Hemani Kaushal",
+      designation: "University of North Florida, USA",
+      photoUrl: hemaniImg,
+    },
+  ],
+}
 ];
 
 export default function SpecialSessions() {
