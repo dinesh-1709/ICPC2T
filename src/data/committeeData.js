@@ -123,8 +123,7 @@ export const nationalAdvisory = [
   { name: "Prof. Ram Bilas Pachori", role: "IIT Indore" },
   { name: "Prof. Kiran Kumar Pattanaik", role: "IITM Gwalior" },
   { name: "Prof. Durgesh Kumar Mishra", role: "SAIT Indore" },
-  { name: "Prof. Sanjeev Singh", role: "MANIT Bhopal" },
-  { name: "Prof. Soumya R Mohanty", role: "IITBHU" }
+  { name: "Prof. Sanjeev Singh", role: "MANIT Bhopal" }
 ];
 
 export const technicalProgramCommittee = [
