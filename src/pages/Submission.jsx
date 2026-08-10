@@ -29,7 +29,7 @@ export default function Submission() {
           <p className="text-blue-100 mt-4 text-sm">ICPC2T 2027 — Call for Papers</p>
           <div className="mt-6">
             <a
-              href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+              href="https://cmt3.research.microsoft.com/ICPCCT2027/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold px-6 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
