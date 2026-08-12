@@ -7,6 +7,8 @@ import ss1Pdf from '../assets/SpecialSession/SS pdf/SS1.pdf';
 import ss2Pdf from '../assets/SpecialSession/SS pdf/SS2.pdf';
 import ss3Pdf from '../assets/SpecialSession/SS pdf/SS3.pdf';
 import SS4Pdf from "../assets/SpecialSession/SS pdf/SS4.pdf";
+import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
+import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -26,6 +28,11 @@ import PankajImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pan
 import BrajeshImg from "../assets/SpecialSession/Organizing chairs images/Dr. Brajesh Kumar, Government Engineering College Jamui, Bihar, India.png";
 import AkshayImg from "../assets/SpecialSession/Organizing chairs images/Dr. Akshay Kumar, PSCAD Engineer, Manav Energy, Begaluru, India.png";
 import MukeshImg from "../assets/SpecialSession/Organizing chairs images/Dr. Mukesh Kumar, Government Engineering College Jamui, Bihar, India.png";
+import RavikumarImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravikumar R N, Jain (Deemed-to-be University), India.png";
+import WulfranImg from "../assets/SpecialSession/Organizing chairs images/Dr. Wulfran Fendzi Mbasso, Applied Science Private University, Jordan.png";
+import JayarajImg from "../assets/SpecialSession/Organizing chairs images/Dr. Jayaraj Ramasamy, De Montfort University, Kazakhstan.png";
+import AbhishakeImg from "../assets/SpecialSession/Organizing chairs images/Mr. Abhishake Reddy, DPR Solutions Inc. USA.png";
+
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   show:   (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: i * 0.05 } })
@@ -149,7 +156,7 @@ const specialSessionsData = [
   {
   id: 6,
   title: "Special Session 6: Advancing Efficient Electrical Drives, Electric Vehicles, and Sustainable Power Systems",
-  pdfUrl: SS4Pdf,
+  pdfUrl: SS6Pdf,
   instructions:
     'After login, select Special Session (SS6): “Advancing Efficient Electrical Drives, Electric Vehicles, and Sustainable Power Systems”',
   chairs: [
@@ -172,6 +179,36 @@ const specialSessionsData = [
       name: "Dr. Pankaj Kumar",
       designation: "Manipal Academy of Higher Education, Manipal , India",
       photoUrl: PankajImg,
+    }
+  ],
+},
+  // SS8 -->
+  {
+  id: 8,
+  title: "Special Session 8: Trustworthy Federated and Agentic Intelligence for Privacy-Preserving Distributed Energy Systems",
+  pdfUrl: SS8Pdf,
+  instructions:
+    'After login, select Special Session (SS8): “Trustworthy Federated and Agentic Intelligence for Privacy-Preserving Distributed Energy Systems” ',
+  chairs: [
+    {
+      name: "Dr. Ravikumar R N",
+      designation: "Jain (Deemed-to-be University), India",
+      photoUrl: RavikumarImg,
+    },
+    {
+      name: "Dr. Wulfran Fendzi Mbasso",
+      designation: "Applied Science Private University, Jordan",
+      photoUrl: WulfranImg,
+    },
+    {
+      name: "Dr. Jayaraj Ramasamy",
+      designation: "De Montfort University, Kazakhstan",
+      photoUrl: JayarajImg,
+    },
+    {
+      name: "Mr. Abhishake Reddy",
+      designation: "DPR Solutions Inc. USA",
+      photoUrl: AbhishakeImg,
     }
   ],
 }
