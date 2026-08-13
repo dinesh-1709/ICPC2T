@@ -3,11 +3,13 @@ import { FaFilePdf } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
 
 // Import PDFs
-import ss1Pdf from '../assets/SpecialSession/SS pdf/SS1.pdf';
-import ss2Pdf from '../assets/SpecialSession/SS pdf/SS2.pdf';
-import ss3Pdf from '../assets/SpecialSession/SS pdf/SS3.pdf';
+import SS1Pdf from '../assets/SpecialSession/SS pdf/SS1.pdf';
+import SS2Pdf from '../assets/SpecialSession/SS pdf/SS2.pdf';
+import SS3Pdf from '../assets/SpecialSession/SS pdf/SS3.pdf';
 import SS4Pdf from "../assets/SpecialSession/SS pdf/SS4.pdf";
+import SS5Pdf from "../assets/SpecialSession/SS pdf/SS5.pdf";
 import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
+import SS7Pdf from "../assets/SpecialSession/SS pdf/SS7.pdf";
 import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 
 // Import Chairs Images
@@ -32,6 +34,13 @@ import RavikumarImg from "../assets/SpecialSession/Organizing chairs images/Dr. 
 import WulfranImg from "../assets/SpecialSession/Organizing chairs images/Dr. Wulfran Fendzi Mbasso, Applied Science Private University, Jordan.png";
 import JayarajImg from "../assets/SpecialSession/Organizing chairs images/Dr. Jayaraj Ramasamy, De Montfort University, Kazakhstan.png";
 import AbhishakeImg from "../assets/SpecialSession/Organizing chairs images/Mr. Abhishake Reddy, DPR Solutions Inc. USA.png";
+import BishwajitImg from "../assets/SpecialSession/Organizing chairs images/Dr. Bishwajit Dey, Manipal University Jaipur.png";
+import PulakrajImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pulakraj Aryan, Manipal University Jaipur.png";
+import ManojImg from "../assets/SpecialSession/Organizing chairs images/Dr. Manoj Debnath, Siksha 'O' Anusandhan, Bhubaneswar.png";
+import SatyendraImg from "../assets/SpecialSession/Organizing chairs images/Dr. Satyendra Pratap Singh, Poornima University, Jaipur.png";
+import RaviImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Bhushan, NIT Jamshedpur.png";
+import DeepakImg from "../assets/SpecialSession/Organizing chairs images/Dr. Deepak Kumar Gupta, NSUT, New Delhi.png";
+import SaurabhImg from "../assets/SpecialSession/Organizing chairs images/Dr. Saurabh Kesherwani, EEGRID ANALYTICS Pvt. Ltd.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -45,7 +54,7 @@ const specialSessionsData = [
   {
     id: 1,
     title: "Special Session 1: Intelligent Materials and Electrochemical Technologies for Power, Hydrogen, Energy Storage and Sensing Applications",
-    pdfUrl: ss1Pdf,
+    pdfUrl: SS1Pdf,
     instructions: "After login, select Special Session (SS1): “Intelligent Materials and Electrochemical Technologies for Power, Hydrogen, Energy Storage and Sensing Applications”",
     chairs: [
       {
@@ -70,7 +79,7 @@ const specialSessionsData = [
   {
     id: 2,
     title: "Special Session 2: Energy-Efficient AI, Intelligent Control, and Edge Computing for Sustainable Power and Smart Energy Systems",
-    pdfUrl: ss2Pdf,
+    pdfUrl: SS2Pdf,
     instructions: "After login, select Special Session (SS2): “Energy-Efficient AI, Intelligent Control, and Edge Computing for Sustainable Power and Smart Energy Systems”",
     chairs: [
       {
@@ -100,7 +109,7 @@ const specialSessionsData = [
   {
     id: 3,
     title: "Special Session 3: AI Data Centers: Power, Computing and Intelligent Energy Management",
-    pdfUrl: ss3Pdf,
+    pdfUrl: SS3Pdf,
     instructions: "After login, select Special Session (SS3): “AI Data Centers: Power, Computing and Intelligent Energy Management”",
     chairs: [
       {
@@ -151,6 +160,31 @@ const specialSessionsData = [
     }
   ],
 },
+  // SS5 -->
+  {
+  id: 5,
+  title: "Special Session 5: Resilient Cyber-Physical Distribution Networks: Anomaly Detection, Demand Response, and Electric Vehicle Integration",
+  pdfUrl: SS5Pdf,
+  instructions:
+    'After login, select Special Session (SS-05): “Resilient CyberPhysical Distribution Networks: Anomaly Detection, Demand Response, and Electric Vehicle Integration”',
+  chairs: [
+    {
+      name: "Dr. Bishwajit Dey",
+      designation: "Manipal University Jaipur",
+      photoUrl: BishwajitImg,
+    },
+    {
+      name: "Dr. Pulakraj Aryan",
+      designation: "Manipal University Jaipur",
+      photoUrl: PulakrajImg,
+    },
+    {
+      name: "Dr. Manoj Debnath",
+      designation: "Siksha 'O' Anusandhan, Bhubaneswar",
+      photoUrl: ManojImg,
+    }
+  ],
+},
 
   // SS6 -->
   {
@@ -179,6 +213,36 @@ const specialSessionsData = [
       name: "Dr. Pankaj Kumar",
       designation: "Manipal Academy of Higher Education, Manipal , India",
       photoUrl: PankajImg,
+    }
+  ],
+},
+  // SS7 -->
+  {
+  id: 7,
+  title: "Special Session 7: Intelligent Wind and Hybrid Renewable Energy Systems: Reinventing the Global Energy Future",
+  pdfUrl: SS7Pdf,
+  instructions:
+    'After login, select Special Session (SS-7): “Intelligent Wind and Hybrid Renewable Energy Systems: Reinventing the Global Energy Future”',
+  chairs: [
+    {
+      name: "Dr. Satyendra Pratap Singh",
+      designation: "Poornima University, Jaipur",
+      photoUrl: SatyendraImg,
+    },
+    {
+      name: "Dr. Ravi Bhushan",
+      designation: "NIT Jamshedpur",
+      photoUrl: RaviImg,
+    },
+    {
+      name: "Dr. Deepak Kumar Gupta",
+      designation: "NSUT, New Delhi",
+      photoUrl: DeepakImg,
+    },
+    {
+      name: "Dr. Saurabh Kesherwani",
+      designation: "EEGRID ANALYTICS Pvt. Ltd",
+      photoUrl: SaurabhImg,
     }
   ],
 },
