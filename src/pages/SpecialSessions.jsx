@@ -11,6 +11,7 @@ import SS5Pdf from "../assets/SpecialSession/SS pdf/SS5.pdf";
 import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
 import SS7Pdf from "../assets/SpecialSession/SS pdf/SS7.pdf";
 import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
+import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -41,6 +42,8 @@ import SatyendraImg from "../assets/SpecialSession/Organizing chairs images/Dr. 
 import RaviImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Bhushan, NIT Jamshedpur.png";
 import DeepakImg from "../assets/SpecialSession/Organizing chairs images/Dr. Deepak Kumar Gupta, NSUT, New Delhi.png";
 import SaurabhImg from "../assets/SpecialSession/Organizing chairs images/Dr. Saurabh Kesherwani, EEGRID ANALYTICS Pvt. Ltd.png";
+import SuhailImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. Suhail Shaikh, Hanshan Normal University China.png";
+import ShakeImg from "../assets/SpecialSession/Organizing chairs images/Dr. Shake Ibna Abir, Florida Gulf Coast University, FL, USA.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -246,6 +249,7 @@ const specialSessionsData = [
     }
   ],
 },
+
   // SS8 -->
   {
   id: 8,
@@ -273,6 +277,32 @@ const specialSessionsData = [
       name: "Mr. Abhishake Reddy",
       designation: "DPR Solutions Inc. USA",
       photoUrl: AbhishakeImg,
+    }
+  ],
+},
+
+  //SS9 -->
+  {
+  id: 9,
+  title: "Special Session 9:  AI, Digital Twins and Cyber-Resilient Intelligence for Wide-Area Monitoring and Next-Generation Power Grids",
+  pdfUrl: SS9Pdf,
+  instructions:
+    'After login, select Special Session (SS-09): “AI, Digital Twins and Cyber-Resilient Intelligence for Wide-Area Monitoring and Next-Generation Power Grids ”',
+  chairs: [
+    {
+      name: "Dr. M. Suhail Shaikh",
+      designation: "Hanshan Normal University China",
+      photoUrl: SuhailImg,
+    },
+    {
+      name: "Dr. Wulfran Fendzi Mbasso",
+      designation: "Applied Science Private University, Jordan",
+      photoUrl: WulfranImg,
+    },
+    {
+      name: "Dr. Shake Ibna Abir",
+      designation: "Florida Gulf Coast University, FL, USA",
+      photoUrl: ShakeImg,
     }
   ],
 }
