@@ -152,11 +152,6 @@ const specialSessionsData = [
       photoUrl: sheilaImg,
     },
     {
-      name: "Dr. Yogesh Kumar K",
-      designation: "Alliance University, Bangalore",
-      photoUrl: yogeshImg,
-    },
-    {
       name: "Dr. Hemani Kaushal",
       designation: "University of North Florida, USA",
       photoUrl: hemaniImg,
