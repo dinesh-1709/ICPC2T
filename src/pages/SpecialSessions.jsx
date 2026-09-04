@@ -55,6 +55,7 @@ import PritamImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pri
 import KundanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Kundan Kumar, NIT Jamshedpur.png";
 import RaviShankarImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Shankar, NIT Patna.png";
 import RammohanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Rammohan Mallipeddi, KNU South Korea.png";
+import MoumitaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Moumita Saha ,VIT-AP University, Amaravati, Andhra Pradesh, India.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -304,6 +305,11 @@ const specialSessionsData = [
       name: "Dr. Mohd Ashraf Bin Ahmad",
       designation: "Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Pahang, Malaysia",
       photoUrl: AshrafImg,
+    },
+    {
+      name: "Dr. Moumita Saha",
+      designation: "VIT-AP University, Amaravati, Andhra Pradesh, India",
+      photoUrl: MoumitaImg,
     },
     // {
     //   name: "Dr. Shake Ibna Abir",
