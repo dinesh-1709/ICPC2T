@@ -14,6 +14,7 @@ import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
 import SS10Pdf from "../assets/SpecialSession/SS pdf/SS10.pdf";
 import SS11Pdf from "../assets/SpecialSession/SS pdf/SS11.pdf";
+import SS12Pdf from "../assets/SpecialSession/SS pdf/SS12.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -56,6 +57,10 @@ import KundanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Kun
 import RaviShankarImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Shankar, NIT Patna.png";
 import RammohanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Rammohan Mallipeddi, KNU South Korea.png";
 import MoumitaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Moumita Saha ,VIT-AP University, Amaravati, Andhra Pradesh, India.png";
+import DebasmitaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Debasmita Panda, NIT Warangal.png";
+import DebaniImg from "../assets/SpecialSession/Organizing chairs images/Dr. Debani Prasad Mishra, IIIT Bhubaneswar.png";
+import JayantaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Jayanta Kumar Sahu, Vigan's IIT, Vizag.png";
+import SurenderImg from "../assets/SpecialSession/Organizing chairs images/Dr. Surender Reddy Salkut, Woosong Univ., Korea.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -377,6 +382,37 @@ const specialSessionsData = [
       name: "Dr. Rammohan Mallipeddi",
       designation: "KNU South Korea",
       photoUrl: RammohanImg,
+    },
+  ],
+},
+
+  // SS12  -->
+  {
+  id: 12,
+  title: "Special Session 12: AI-Driven Hosting Capacity and Power Quality Analysis for Renewable-Rich Grids",
+  pdfUrl: SS12Pdf,
+  instructions:
+    'After login, select Special Session (SS-12): “AI-Driven Hosting Capacity and Power Quality Analysis for Renewable-Rich Grids”',
+  chairs: [
+    {
+      name: "Dr. Debasmita Panda",
+      designation: "NIT Warangal",
+      photoUrl: DebasmitaImg,
+    },
+    {
+      name: "Dr. Debani Prasad Mishra",
+      designation: "IIIT Bhubaneswar",
+      photoUrl: DebaniImg,
+    },
+    {
+      name: "Dr. Jayanta Kumar Sahu",
+      designation: "Vignan's IIT, Vizag",
+      photoUrl: JayantaImg,
+    },
+    {
+      name: "Dr. Surender Reddy Salkut",
+      designation: "Woosong Univ., Korea",
+      photoUrl: SurenderImg,
     },
   ],
 }
