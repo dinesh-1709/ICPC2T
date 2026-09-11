@@ -456,7 +456,7 @@ export default function SpecialSessions() {
               
               {/* Organizing Chairs Section */}
               <div className="mt-8">
-                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-5 border-b border-gray-100 pb-2">Organizing Chairs</h3>
+                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-5 border-b border-gray-100 pb-2">Special Session Chairs</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   {session.chairs.map((chair, i) => (
                     <div key={i} className="flex items-center gap-4 bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-blue-100 transition-colors">
