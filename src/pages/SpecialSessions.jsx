@@ -12,7 +12,6 @@ import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
 import SS7Pdf from "../assets/SpecialSession/SS pdf/SS7.pdf";
 import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
-import SS10Pdf from "../assets/SpecialSession/SS pdf/SS10.pdf";
 import SS11Pdf from "../assets/SpecialSession/SS pdf/SS11.pdf";
 import SS12Pdf from "../assets/SpecialSession/SS pdf/SS12.pdf";
 
@@ -48,10 +47,6 @@ import SaurabhImg from "../assets/SpecialSession/Organizing chairs images/Dr. Sa
 import SuhailImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. Suhail Shaikh, Hanshan Normal University China.png";
 import ShakeImg from "../assets/SpecialSession/Organizing chairs images/Dr. Shake Ibna Abir, Florida Gulf Coast University, FL, USA.png";
 import AshrafImg from "../assets/SpecialSession/Organizing chairs images/Dr. Mohd Ashraf Bin Ahmad, Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Pahang, Malaysia.png";
-import SonaliImg from "../assets/SpecialSession/Organizing chairs images/Dr. Sonali Paunikar, Sarvepalli Radhakrishnan University, Bhopal.png";
-import NPPatidarImg from "../assets/SpecialSession/Organizing chairs images/Dr. N. P. Patidar, MANIT, Bhopal.png";
-import MLKolheImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. L. Kolhe, University of Agder, Norway.png";
-import BalakrushnaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Balakrushna Sahu, Hitachi Energy, IDC, Chennai.png";
 import PritamImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pritam Kumar Nirala, NIT Jamshedpur.png";
 import KundanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Kundan Kumar, NIT Jamshedpur.png";
 import RaviShankarImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Shankar, NIT Patna.png";
@@ -327,32 +322,10 @@ const specialSessionsData = [
   //SS10 -->
   {
   id: 10,
-  title: "Special Session 10:  Synergising the Hydrogen Transition, Electric Mobility, and Power Grid Resiliency for Global Sustainability",
-  pdfUrl: SS10Pdf,
-  instructions:
-    'After login, select Special Session (SS10): “Synergising the Hydrogen Transition, Electric Mobility, and Power Grid Resiliency for Global Sustainability”',
-  chairs: [
-    {
-      name: "Dr. Sonali Paunikar",
-      designation: "Sarvepalli Radhakrishnan University, Bhopal",
-      photoUrl: SonaliImg,
-    },
-    {
-      name: "Dr. N. P. Patidar",
-      designation: "MANIT, Bhopal",
-      photoUrl: NPPatidarImg,
-    },
-    {
-      name: "Dr. M. L. Kolhe",
-      designation: "University of Agder, Norway",
-      photoUrl: MLKolheImg,
-    },
-    {
-      name: "Dr. Balakrushna Sahu",
-      designation: "Hitachi Energy, IDC, Chennai",
-      photoUrl: BalakrushnaImg,
-    },
-  ],
+  title: "Special Session 10: Coming Soon",
+  pdfUrl: null,
+  instructions: "Details for this session will be announced soon.",
+  chairs: [],
 },
 
   //SS11 -->
@@ -443,54 +416,68 @@ export default function SpecialSessions() {
               variants={fadeUp} 
               className="card p-6 sm:p-8 border border-gray-100 shadow-md hover:shadow-lg transition-shadow bg-white rounded-2xl"
             >
-              {/* Clickable Title */}
-              <a 
-                href={session.pdfUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-lg sm:text-2xl font-bold text-blue-700 hover:text-blue-500 transition-colors group"
-              >
-                <FaFilePdf className="text-red-500 text-2xl sm:text-3xl group-hover:scale-110 transition-transform shrink-0" />
-                <span className="group-hover:underline decoration-2 underline-offset-4 leading-tight">{session.title}</span>
-              </a>
+              {/* Title */}
+              {session.pdfUrl ? (
+                <a 
+                  href={session.pdfUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-lg sm:text-2xl font-bold text-blue-700 hover:text-blue-500 transition-colors group"
+                >
+                  <FaFilePdf className="text-red-500 text-2xl sm:text-3xl group-hover:scale-110 transition-transform shrink-0" />
+                  <span className="group-hover:underline decoration-2 underline-offset-4 leading-tight">{session.title}</span>
+                </a>
+              ) : (
+                <div className="inline-flex items-center gap-3 text-lg sm:text-2xl font-bold text-gray-700">
+                  <span className="leading-tight">{session.title}</span>
+                </div>
+              )}
               
               {/* Organizing Chairs Section */}
-              <div className="mt-8">
-                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-5 border-b border-gray-100 pb-2">Special Session Chairs</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                  {session.chairs.map((chair, i) => (
-                    <div key={i} className="flex items-center gap-4 bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-blue-100 transition-colors">
-                      <img 
-                        src={chair.photoUrl} 
-                        alt={chair.name} 
-                        className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover shadow-sm ring-2 ring-white shrink-0" 
-                        loading="lazy"
-                      />
-                      <div>
-                        <h4 className="font-bold text-gray-900 text-sm sm:text-base">{chair.name}</h4>
-                        <p className="text-xs sm:text-sm text-gray-600 mt-0.5 font-medium">{chair.designation}</p>
+              {session.chairs && session.chairs.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-5 border-b border-gray-100 pb-2">Special Session Chairs</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                    {session.chairs.map((chair, i) => (
+                      <div key={i} className="flex items-center gap-4 bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-blue-100 transition-colors">
+                        <img 
+                          src={chair.photoUrl} 
+                          alt={chair.name} 
+                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover shadow-sm ring-2 ring-white shrink-0" 
+                          loading="lazy"
+                        />
+                        <div>
+                          <h4 className="font-bold text-gray-900 text-sm sm:text-base">{chair.name}</h4>
+                          <p className="text-xs sm:text-sm text-gray-600 mt-0.5 font-medium">{chair.designation}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Instructions Section */}
-              <div className="mt-8 p-4 sm:p-5 bg-amber-50/50 border border-amber-100/60 rounded-xl">
-                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                  <span className="font-bold text-amber-800">Instructions: </span>
-                  {session.instructions}
-                  {' '}
-                  <a 
-                    href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICPCCT2027" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="font-bold text-blue-600 hover:text-blue-800 underline underline-offset-2"
-                  >
-                    Submit here
-                  </a>
-                </p>
-              </div>
+              {session.instructions && (
+                <div className="mt-8 p-4 sm:p-5 bg-amber-50/50 border border-amber-100/60 rounded-xl">
+                  <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                    {session.pdfUrl && <span className="font-bold text-amber-800">Instructions: </span>}
+                    {session.instructions}
+                    {session.pdfUrl && (
+                      <>
+                        {' '}
+                        <a 
+                          href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICPCCT2027" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="font-bold text-blue-600 hover:text-blue-800 underline underline-offset-2"
+                        >
+                          Submit here
+                        </a>
+                      </>
+                    )}
+                  </p>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
