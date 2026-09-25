@@ -12,6 +12,7 @@ import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
 import SS7Pdf from "../assets/SpecialSession/SS pdf/SS7.pdf";
 import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
+import SS10Pdf from "../assets/SpecialSession/SS pdf/SS10.pdf";
 import SS11Pdf from "../assets/SpecialSession/SS pdf/SS11.pdf";
 import SS12Pdf from "../assets/SpecialSession/SS pdf/SS12.pdf";
 
@@ -56,6 +57,9 @@ import DebasmitaImg from "../assets/SpecialSession/Organizing chairs images/Dr. 
 import DebaniImg from "../assets/SpecialSession/Organizing chairs images/Dr. Debani Prasad Mishra, IIIT Bhubaneswar.png";
 import JayantaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Jayanta Kumar Sahu, Vigan's IIT, Vizag.png";
 import SurenderImg from "../assets/SpecialSession/Organizing chairs images/Dr. Surender Reddy Salkut, Woosong Univ., Korea.png";
+import archanaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Archana Sharma,ANRF Prime MInister Professor,NIT RAIPUR.png";
+import sarathiImg from "../assets/SpecialSession/Organizing chairs images/Prof. R. Sarathi,Dept. of Electrical Engineering,IITM Chennai.png";
+import ramPrakashImg from "../assets/SpecialSession/Organizing chairs images/Prof. Ram Prakash, Department of Physics, IIT Jodhpur.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -322,10 +326,27 @@ const specialSessionsData = [
   //SS10 -->
   {
   id: 10,
-  title: "Special Session 10: Coming Soon",
-  pdfUrl: null,
-  instructions: "Details for this session will be announced soon.",
-  chairs: [],
+  title: "Special Session 10: Pulsed Power and Plasma Applications: Bridging Electrical Engineering with Healthcare, Food, Agriculture, Defence, Space, and Industry",
+  pdfUrl: SS10Pdf,
+  instructions:
+    'After login, select Special Session (SS10): “Pulsed Power and Plasma Applications: Bridging Electrical Engineering with Healthcare, Food, Agriculture, Defence, Space, and Industry”',
+  chairs: [
+    {
+      name: "Dr. Archana Sharma",
+      designation: "ANRF Prime Minister Professor, NIT Raipur",
+      photoUrl: archanaImg,
+    },
+    {
+      name: "Prof. R. Sarathi",
+      designation: "Dept. of Electrical Engineering, IITM Chennai",
+      photoUrl: sarathiImg,
+    },
+    {
+      name: "Prof. Ram Prakash",
+      designation: "Department of Physics, IIT Jodhpur",
+      photoUrl: ramPrakashImg,
+    },
+  ],
 },
 
   //SS11 -->
