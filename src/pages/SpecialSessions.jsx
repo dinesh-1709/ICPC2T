@@ -15,6 +15,7 @@ import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
 import SS10Pdf from "../assets/SpecialSession/SS pdf/SS10.pdf";
 import SS11Pdf from "../assets/SpecialSession/SS pdf/SS11.pdf";
 import SS12Pdf from "../assets/SpecialSession/SS pdf/SS12.pdf";
+import SS13Pdf from "../assets/SpecialSession/SS pdf/SS13.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -60,6 +61,10 @@ import SurenderImg from "../assets/SpecialSession/Organizing chairs images/Dr. S
 import archanaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Archana Sharma,ANRF Prime MInister Professor,NIT RAIPUR.png";
 import sarathiImg from "../assets/SpecialSession/Organizing chairs images/Prof. R. Sarathi,Dept. of Electrical Engineering,IITM Chennai.png";
 import ramPrakashImg from "../assets/SpecialSession/Organizing chairs images/Prof. Ram Prakash, Department of Physics, IIT Jodhpur.png";
+import subhashreeImg from "../assets/SpecialSession/Organizing chairs images/Dr. Subhashree Choudhury, SOA University, Bhubaneswar.png";
+import sidharthaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Sidhartha Panda, VSSUT, Burla.png";
+import patidarImg from "../assets/SpecialSession/Organizing chairs images/Dr. N. P. Patidar, MANIT, Bhopal.png";
+import kolheImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. L. Kolhe, University of Agder, Norway.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -409,7 +414,38 @@ const specialSessionsData = [
       photoUrl: SurenderImg,
     },
   ],
+},
+    // ss -->13
+{
+  id: 13,
+  title: "Special Session 13: Intelligent Energy Management of Renewable and Storage Integrated Micro/Smart Grids for Sustainable and Flexible Operation",
+  pdfUrl: SS13Pdf,
+  instructions:
+    'After login, select Special Session (SS-13): "Intelligent Energy Management of Renewable and Storage Integrated Micro/Smart Grids for Sustainable and Flexible Operation".',
+  chairs: [
+    {
+      name: "Dr. Subhashree Choudhury",
+      designation: "SOA University, Bhubaneswar",
+      photoUrl: subhashreeImg
+    },
+    {
+      name: "Dr. Sidhartha Panda",
+      designation: "VSSUT, Burla",
+      photoUrl: sidharthaImg
+    },
+    {
+      name: "Dr. N. P. Patidar",
+      designation: "MANIT, Bhopal",
+      photoUrl: patidarImg
+    },
+    {
+      name: "Dr. M. L. Kolhe",
+      designation: "University of Agder, Norway",
+      photoUrl: kolheImg
+    }
+  ]
 }
+
 ];
 
 export default function SpecialSessions() {
