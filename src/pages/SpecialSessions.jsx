@@ -415,35 +415,13 @@ const specialSessionsData = [
     },
   ],
 },
- // ss -->13
+    // ss -->13
 {
   id: 13,
   title: "Special Session 13: Intelligent Energy Management of Renewable and Storage Integrated Micro/Smart Grids for Sustainable and Flexible Operation",
   pdfUrl: SS13Pdf,
   instructions:
     'After login, select Special Session (SS-13): "Intelligent Energy Management of Renewable and Storage Integrated Micro/Smart Grids for Sustainable and Flexible Operation".',
-  topics: [
-    "Green and sustainable energy management in micro/smart grids",
-    "Low-carbon and carbon-aware energy management and renewable-energy utilisation",
-    "Coordinated renewable energy and energy-storage management",
-    "Battery energy storage management and storage-aware scheduling",
-    "Optimal charging/discharging, storage flexibility and intermittency mitigation",
-    "Multi-storage and hybrid energy-storage coordination",
-    "AI/ML-based and data-driven energy management",
-    "Reinforcement-learning-based energy management",
-    "Intelligent forecasting and predictive energy management",
-    "Metaheuristic, evolutionary and multi-objective optimisation",
-    "Uncertainty-aware energy management",
-    "Energy flexibility, flexible loads and demand-side management",
-    "Coordinated operation of DERs, renewable generation, storage and flexible loads",
-    "Prosumer-centric and community-level energy management",
-    "Hierarchical, decentralised and multi-agent energy management",
-    "Day-ahead, intra-day and real-time energy management",
-    "Techno-economic-environmental optimisation of micro/smart grids",
-    "Peer-to-peer and local energy management",
-    "Resilient and sustainable microgrid energy management",
-    "Experimental, real-time and hardware-in-the-loop validation"
-  ],
   chairs: [
     {
       name: "Dr. Subhashree Choudhury",
