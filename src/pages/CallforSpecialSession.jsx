@@ -116,7 +116,7 @@ export default function CallforSpecialSession() {
                       <h3>Minimum Papers Requirement</h3>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      A minimum of <strong>6 accepted and registered papers</strong> with authors from at least <strong>4 different institutions</strong> is required for each session. Smaller sessions may be merged into regular tracks.
+                      A minimum of <strong>8 accepted and registered papers</strong> with authors from at least <strong>4 different institutions</strong> is required for each session. Smaller sessions may be merged into regular tracks.
                     </p>
                   </div>
                 </div>
