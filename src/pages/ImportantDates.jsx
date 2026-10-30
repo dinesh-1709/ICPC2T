@@ -87,7 +87,7 @@ export default function ImportantDates() {
             <ul className="space-y-3 text-sm text-gray-600">
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 shrink-0" /> Paper Submission Opens: 1st May, 2026</li>
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Registration Details: Now Available</li>
-              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Acceptance Notification: 15th Nov, 2026</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Acceptance Notification: 30th Nov, 2026</li>
             </ul>
           </motion.div>
         </div>
