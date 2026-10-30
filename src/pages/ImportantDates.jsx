@@ -8,9 +8,9 @@ const fadeUp = {
 };
 
 const dates = [
-  { event: 'Paper Submission Opens',         date: '1st May, 2026',        icon: '📝', highlight: false },
-  { event: 'Full Paper Submission Deadline', date: '31st October, 2026',    icon: '📌', highlight: false },
-  { event: 'Acceptance Notification',        date: '15th November, 2026',  icon: '✉️', highlight: false },
+  { event: 'Paper Submission Opens',         date: '1st May, 2026',      icon: '📝', highlight: false },
+  { event: 'Full Paper Submission Deadline', date: '31st October, 2026', revisedDate :'15th November, 2026' ,   icon: '📌', highlight: false },
+  { event: 'Acceptance Notification',        date: '30th November, 2026',  icon: '✉️', highlight: false },
   { event: 'Camera Ready Paper Due',         date: '15th December, 2026',  icon: '📄', highlight: false },
   { event: 'Registration Deadline',          date: '15th January, 2027',   icon: '🏷️', highlight: false },
   { event: 'Conference Dates',               date: 'March 3, 2027',        icon: '🎓', highlight: false },
@@ -44,9 +44,22 @@ export default function ImportantDates() {
                   {d.highlight && <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest">Conference Day</span>}
                 </div>
               </div>
-              <span className={`font-bold text-sm sm:text-base whitespace-nowrap px-4 py-2 rounded-lg ${
-                d.highlight ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-700 border border-blue-100'
-              }`}>{d.date}</span>
+              <div className="flex items-center gap-2 flex-wrap justify-end">
+                <span className={`font-bold text-sm sm:text-base whitespace-nowrap px-4 py-2 rounded-lg ${
+                  d.highlight
+                    ? 'bg-white/20 text-white'
+                    : 'bg-blue-50 text-blue-700 border border-blue-100'
+                } ${d.revisedDate ? 'line-through opacity-60' : ''}`}>
+                  {d.date}
+                </span>
+
+                {d.revisedDate && (
+                  <span className="font-bold text-sm sm:text-base whitespace-nowrap px-4 py-2 rounded-lg bg-green-50 text-green-700 border border-green-200">
+                    {d.revisedDate}
+                  </span>
+                )}
+
+              </div>
             </motion.div>
           ))}
         </div>
