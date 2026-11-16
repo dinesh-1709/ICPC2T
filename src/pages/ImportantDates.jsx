@@ -9,7 +9,7 @@ const fadeUp = {
 
 const dates = [
   { event: 'Paper Submission Opens',         date: '1st May, 2026',      icon: '📝', highlight: false },
-  { event: 'Full Paper Submission Deadline', date: '31st October, 2026', revisedDate :'15th November, 2026' ,   icon: '📌', highlight: false },
+  { event: 'Full Paper Submission Hard Deadline', date: '31st October, 2026', revisedDate :'23rd November, 2026' ,   icon: '📌', highlight: false },
   { event: 'Acceptance Notification',        date: '30th November, 2026',  icon: '✉️', highlight: false },
   { event: 'Camera Ready Paper Due',         date: '15th December, 2026',  icon: '📄', highlight: false },
   { event: 'Registration Deadline',          date: '15th January, 2027',   icon: '🏷️', highlight: false },
