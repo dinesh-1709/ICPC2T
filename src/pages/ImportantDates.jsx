@@ -9,10 +9,10 @@ const fadeUp = {
 
 const dates = [
   { event: 'Paper Submission Opens',         date: '1st May, 2026',      icon: '📝', highlight: false },
-  { event: 'Full Paper Submission Hard Deadline', date: '31st October, 2026', revisedDate :'23rd November, 2026' ,   icon: '📌', highlight: false },
-  { event: 'Acceptance Notification',        date: '30th November, 2026',  icon: '✉️', highlight: false },
-  { event: 'Camera Ready Paper Due',         date: '15th December, 2026',  icon: '📄', highlight: false },
-  { event: 'Registration Deadline',          date: '15th January, 2027',   icon: '🏷️', highlight: false },
+  { event: 'Full Paper Submission Hard Deadline', date: '31st October, 2026', revisedDate :'30th November, 2026' ,   icon: '📌', highlight: false },
+  { event: 'Acceptance Notification',        date: '10th December, 2026',  icon: '✉️', highlight: false },
+  { event: 'Camera Ready Paper Due',         date: '25th December, 2026',  icon: '📄', highlight: false },
+  { event: 'Registration Deadline',          date: '25th December, 2026',   icon: '🏷️', highlight: false },
   { event: 'Conference Dates',               date: 'March 3, 2027',        icon: '🎓', highlight: false },
 ];
 
@@ -87,7 +87,7 @@ export default function ImportantDates() {
             <ul className="space-y-3 text-sm text-gray-600">
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 shrink-0" /> Paper Submission Opens: 1st May, 2026</li>
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Registration Details: Now Available</li>
-              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Acceptance Notification: 30th Nov, 2026</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" /> Acceptance Notification: 10th Dec, 2026</li>
             </ul>
           </motion.div>
         </div>
